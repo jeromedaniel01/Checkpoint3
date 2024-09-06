@@ -1,12 +1,12 @@
 # Partie 1 : Gestion des utilisateurs
 
-Q.2.1.1 :
+### Q.2.1.1 :
 
 Je crée un utilisateur "jerome" 
 
 ![ajout utilisateur](https://github.com/user-attachments/assets/268a6f05-67f5-46d4-8b7e-fb61639b8beb)
 
-Q.2.1.2
+### Q.2.1.2
 
 J'integre ce compte au groupe sudoers pour qu'il puisse configurer completement ma machine Linux 
 
@@ -169,7 +169,7 @@ j'ajoute une ligne dans le fichier /etc/fstab
 
 # Partie 4 : Sauvegardes
 
-Q.2.4.1
+### Q.2.4.1
 
 Bareos-Dir est ,si je puis dire ,le chef d'orchestre de Bareos 
 Il  verifie les opérations de sauvegarde, de restauration, et de vérification.
@@ -185,11 +185,11 @@ Il collecte les fichiers et données à sauvegarder sur le système de fichiers 
 
 # Partie 5 : Filtrage et analyse réseau
 
-Q.2.5.1
+### Q.2.5.1
 
 ![regles appliquées](https://github.com/user-attachments/assets/d55ef27c-6f3e-43b7-aa97-f915b29c9320)
 
-Q.2.5.2
+### Q.2.5.2
 
 les types de communication autorisées sont:
 
@@ -197,11 +197,11 @@ Tcp port 22
 Icmp 
 Icmp Ipv6
 
-Q.2.5.3
+### Q.2.5.3
 
 ct state invalid
 
-Q.2.5.4
+### Q.2.5.4
 
 #Ouvrir le port 9101 pour le Bareos Director (communication entrante)
 sudo nft add rule inet filter input ip saddr (IP) tcp dport 9101 accept
@@ -217,9 +217,14 @@ sudo nft add rule inet filter output ip daddr (IP) tcp sport 9101-9103 accept
 
 # Partie 6 : Analyse de logs
 
-Q.2.6.1
+### Q.2.6.1
 
 ![refus de co](https://github.com/user-attachments/assets/369034fd-21b9-4f9a-8bf3-53d5c74a7f74)
+
+Adresse IP de la machine qui  a fait les tentatives :
+
+# 10.0.0.199
+
 
 
 
